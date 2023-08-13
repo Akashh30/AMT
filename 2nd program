@@ -1,0 +1,23 @@
+//Salesman program
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    float basic,com=0,sales,total;
+    clrscr();
+    printf("Enter monthly Salary:");
+    scanf("%f",&basic);
+    printf("Enter the sales amount:");
+    scanf("%f",&sales);
+    if(sales>=100000)
+    com=sales*(5/100.0);
+    else if(sales>=50000)
+    com=sales*(3/100.0);
+    total=com+basic;
+    printf("Commission=%f\nTotal salary=%f",com,total);
+    getch();
+}
+
+
+
+
